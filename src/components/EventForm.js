@@ -95,12 +95,12 @@ export async function action({ request, params }) {
     description: data.get("description"),
   };
 
-  let url = "http://https://earthchronicle-backend.onrender.com//events";
+  let url = "http://https://earthchronicle-backend.onrender.com/events";
 
   if (method === "PATCH") {
     const eventId = params.eventId;
     url =
-      "http://https://earthchronicle-backend.onrender.com//events/" + eventId;
+      "http://https://earthchronicle-backend.onrender.com/events/" + eventId;
   }
 
   const token = getAuthToken();

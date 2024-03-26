@@ -22,7 +22,7 @@ export async function action({ request }) {
   };
 
   const response = await fetch(
-    "http://https://earthchronicle-backend.onrender.com//" + mode,
+    "http://https://earthchronicle-backend.onrender.com/" + mode,
     {
       method: "POST",
       headers: {

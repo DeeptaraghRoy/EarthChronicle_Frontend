@@ -34,7 +34,7 @@ export default EventDetailPage;
 
 async function loadEvent(id) {
   const response = await fetch(
-    "http://https://earthchronicle-backend.onrender.com//events/" + id
+    "http://https://earthchronicle-backend.onrender.com/events/" + id
   );
 
   if (!response.ok) {
@@ -52,7 +52,7 @@ async function loadEvent(id) {
 
 async function loadEvents() {
   const response = await fetch(
-    "http://https://earthchronicle-backend.onrender.com//events"
+    "http://https://earthchronicle-backend.onrender.com/events"
   );
 
   if (!response.ok) {
@@ -85,7 +85,7 @@ export async function action({ params, request }) {
   const eventId = params.eventId;
   const token = getAuthToken();
   const response = await fetch(
-    "http://https://earthchronicle-backend.onrender.com//events/" + eventId,
+    "http://https://earthchronicle-backend.onrender.com/events/" + eventId,
     {
       method: request.method,
       headers: {

@@ -19,7 +19,7 @@ export default EventsPage;
 
 async function loadEvents() {
   const response = await fetch(
-    "http://https://earthchronicle-backend.onrender.com//events"
+    "http://https://earthchronicle-backend.onrender.com/events"
   );
 
   if (!response.ok) {
